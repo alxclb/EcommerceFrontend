@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    div{
+        margin: 80px;
+        display: flex;
+        flex-direction: column;
+
+        .link{
+            margin-bottom: 10px;
+        }
+    }
+}
