@@ -1,0 +1,53 @@
+.container {
+  width: 350px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    color: rgb(103, 103, 230);
+    font-weight: 300;
+  }
+
+  input {
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 16px;
+    display: block;
+    border: 1px solid grey;
+    border-radius: 3px;
+    width: 80%;
+    height: 35px;
+    margin: 5px auto;
+    padding-left: 5px;
+  }
+  .img_wrapper {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: white;
+
+    &:hover {
+      background-color: whitesmoke;
+    }
+
+    img {
+      width: 35px;
+      height: 25px;
+    }
+    span {
+      margin-left: 10px;
+    }
+  }
+  h5 {
+    text-align: center;
+    color: rgb(5, 207, 5);
+    font-size: 16px;
+    font-weight: 400;
+  }
+}

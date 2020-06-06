@@ -1,0 +1,19 @@
+.container {
+  width: 350px;
+  height: fit-content;
+  margin: 0px 5px;
+  text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      margin: auto 0;
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

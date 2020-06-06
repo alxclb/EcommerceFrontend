@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <p>Your Company Name</p>
+      <p className={styles.company_name}>Your Company Name &copy; 2020</p>
     </>
   );
 };

@@ -1,14 +1,20 @@
 .container {
-  margin-top: 10em;
   text-align: center;
-  .tag {
+  height: 400px;
+  background-color: transparent;
+  color: white;
+  h1 {
     font-size: 45px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 150px;
+    
   }
   hr {
     width: 15%;
     margin-top: 70px;
   }
-  .text{
+  .text {
     display: none;
   }
 }

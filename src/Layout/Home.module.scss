@@ -1,8 +1,10 @@
-
 .container {
-    background-color:rgb(224, 222, 222);
-    max-width: 1400px;
-    height: 150vh;
-    margin: 25px auto;
-    font-family: 'Alegreya Sans', sans-serif;
+  background-color: white;
+  max-width: 1400px;
+  height: fit-content;
+  margin: 25px auto;
+  margin-top: 0px;
+  font-family: "Alegreya Sans", sans-serif;
+  border: 1px solid #ff4747;
+  border-top: none;
 }

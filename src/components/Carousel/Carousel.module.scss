@@ -1,4 +1,3 @@
-
 $black: #161616;
 
 ul {
@@ -13,7 +12,7 @@ a {
 
 // ============= Carousel ============= //
 .carousel_wrap {
-  background-color: rgb(250, 227, 212);
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +27,7 @@ a {
 }
 
 .carousel_slide_list {
+  display: flex;
   position: relative;
   min-height: 45vh;
   display: flex;
@@ -38,33 +38,30 @@ a {
 }
 
 .carousel_slide_item {
-  // background-color: rgb(128, 255, 124);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
   transition: all 0.5s ease;
-  width: fit-content; //25rem;
-  // slide item initial state
-  &.s4 {
-    transform: translateX(-60rem);
-    opacity: 0;
+  width: fit-content;
+
+  &:nth-child(1) {
+    order: 4;
   }
-  &.s5 {
-    transform: translateX(-30rem);
+  &:nth-child(2) {
+    order: 5;
   }
-  &.s1 {
-    transform: translateX(0);
+  &:nth-child(3) {
+    order: 1;
   }
-  &.s2 {
-    transform: translateX(30rem);
+  &:nth-child(4) {
+    order: 2;
   }
-  &.s3 {
-    transform: translateX(60rem);
-    opacity: 0;
+  &:nth-child(5) {
+    order: 3;
   }
 }
 
-.card_wrapper{
+.card_wrapper {
   flex: 2 1 auto;
 }
 
@@ -119,4 +116,24 @@ a {
       background: $black;
     }
   }
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+.box :nth-child(1) {
+  order: 2;
+}
+.box :nth-child(2) {
+  order: 3;
+}
+.box :nth-child(3) {
+  order: 1;
+}
+.box :nth-child(4) {
+  order: 3;
+}
+.box :nth-child(5) {
+  order: 1;
 }

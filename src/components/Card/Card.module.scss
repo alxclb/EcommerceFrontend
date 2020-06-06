@@ -1,74 +1,66 @@
-$blue: #341cac;
 .container {
+  font-family: "Overpass";
   width: 280px;
+  height: 400px;
   display: block;
   margin: 40px;
-  box-shadow: 10px 5px 40px 20px darken(#d6d6d6, 5%);
+  //box-shadow: 10px 5px 40px 20px darken(#ecebeb, 5%);
   transition: 0.25s;
 
   &:hover {
-    box-shadow: 10px 5px 40px 20px darken(#747477, 10%);
+    box-shadow: 10px 5px 40px 20px darken(#b9b9bb, 10%);
     cursor: pointer;
+    transform: translate(10px, 0);
+  }
+  .card_header {
+    height: 80%;
+    //width: 100%;
+    padding: 15px;
+    background-size: cover;
+    color: #fff;
 
-    .button_primary {
-      transform: translate(10px, 0);
+    .card_header__title {
+      text-transform: uppercase;
+      margin: 0;
     }
   }
-}
 
-.card_header {
-  height: 150px;
-  width: 100%;
-  padding: 15px;
-  width: 100%;
-  background-size: cover;
-  color: #fff;
-}
+  .card_body {
+    padding: 15px;
+    background-color: #fff;
+    width: 100%;
 
-.card_header__title {
-  text-transform: uppercase;
-  margin: 0;
-}
+    .body_content {
+      margin: 0 0;
+      font-size: 13px;
+      line-height: 1.8;
+    }
 
-.card_body {
-  padding: 15px;
-  background-color: #fff;
-  width: 100%;
-}
+    .btn_wrapper{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
 
-.date {
-  font-size: 11px;
-  font-weight: 600;
-  color: grey;
-}
+    .button_primary {
+      margin: 0 auto;
+      cursor: pointer;
+      width: 75px;
+      border: 1px solid grey;
+      border-radius: 3px;
+      box-shadow: none;
+      font-family: inherit;
+      background-color: transparent;
+      color: black;
+      font-size: 15px;
+      transition: 0.25s;
+      &:hover {
+        transform: translate(10px, 0);
+      }
+    }
 
-.body_content {
-  padding-bottom: 40px;
-  font-size: 13px;
-  line-height: 1.8;
-}
-
-.button_primary {
-  cursor: pointer;
-  width: 75px;
-  border: 1px solid grey;
-  border-radius: 3px;
-  box-shadow: none;
-  font-family: inherit;
-  background-color: transparent;
-  color: $blue;
-  font-size: 15px;
-  transition: 0.25s;
-
-  i {
-    padding-right: 4px;
+    .price {
+      margin: 5px;
+    }
   }
-}
-
-.designer_link {
-  color: #fff;
-  text-align: center;
-  font-size: 12px;
-  text-decoration: none;
-  display: block;
 }

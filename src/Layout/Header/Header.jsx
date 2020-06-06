@@ -1,13 +1,13 @@
 import React from "react";
-import Search from "../../components/Searchbar/Search";
 
 import styles from "./Header.module.scss";
 import Navbar from "../../components/Navbar/Navbar";
+import Logo from "../../components/Logo/Logo";
 
 const Header = () => {
   return (
     <div className={styles.container}>
-      <Search />
+      <Logo />
       <Navbar />
     </div>
   );

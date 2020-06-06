@@ -1,18 +1,14 @@
-@font-face {
-  font-family: AlegreyaSans-thin;
-  src: url(../../font/AlegreyaSans-Thin.ttf);
-}
-
 .container {
-  font-family: AlegreyaSans-thin;
+  font-family: Overpass;
   max-width: 1400px;
-  background-color: rgb(212, 212, 212);
+  height: fit-content;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  border: 1px solid #ff4747;
+  border-top: none;
 
   .product {
-    height: 300px;
     display: flex;
     flex-direction: row;
 
@@ -20,6 +16,10 @@
       height: max-content;
       width: 50%;
       background-color: rgb(243, 242, 242);
+
+      img{
+        width: 100%;
+      }
     }
     .info {
       height: max-content;
@@ -28,21 +28,53 @@
       background-color: rgb(238, 238, 238);
       text-align: center;
 
-      h3 {
-        font-size: 45px;
+      h1{
+        margin-top: 45px;
       }
-      .price {
-        display: flex;
-        font-size: 25px;
-        padding-left: 50px;
 
-        div {
-          width: 150px;
-          background-color: white;
-          padding-left: 10px;
-          margin-left: 10px;
+      .buy_container {
+        display: flex;
+        flex-direction: column;
+
+        .price {
+          display: flex;
+          font-size: 25px;
+          padding-left: 50px;
+
+          div.show_price {
+            width: 150px;
+            background-color: white;
+            padding-left: 10px;
+            margin-left: 10px;
+          }
+          div {
+            width: 150px;
+            padding-left: 10px;
+            margin-left: 10px;
+
+            select {
+              height: 30px;
+              outline: none;
+            }
+            button {
+              height: 30px;
+              width: 204px;
+              border: none;
+              border: 1px solid black;
+              border-radius: 2px;
+              background: #f4d078;
+              background: -webkit-linear-gradient(top, #f7dfa5, #f0c14b);
+              background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+              cursor: pointer;
+              outline: none;
+              &:hover {
+                background: #f0c65c;
+              }
+            }
+          }
         }
       }
+
       p {
         margin: 50px;
       }

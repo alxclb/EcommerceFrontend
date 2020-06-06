@@ -1,0 +1,35 @@
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  font-family: Overpass, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #232323;
+  border-top: 1px dashed #ff4747;
+
+  p,
+  h1 {
+    max-width: 1350px;
+    margin: 30px auto;
+  }
+
+  .price_wrapper {
+    text-align: center;
+  }
+
+  .list_container {
+    box-sizing: inherit;
+    position: relative;
+    margin-bottom: 75px;
+    padding: 0px;
+
+    .list {
+      box-sizing: inherit;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-flow: row wrap;
+    }
+  }
+}

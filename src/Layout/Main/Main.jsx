@@ -6,12 +6,13 @@ import Shopnow from "./ShopNow/Shopnow";
 import FeaturedProducts from "./FeaturedProducts/FeaturedProducts";
 
 const Main = () => {
+ 
   return (
     <div className={styles.container}>
-      <Tagline tag='Header' />
-      <Shopnow />
+      <Tagline tag="Header" />
+      <Shopnow  />
       <FeaturedProducts />
-      <Tagline tag='About' />
+      <Tagline tag="About" />
     </div>
   );
 };
